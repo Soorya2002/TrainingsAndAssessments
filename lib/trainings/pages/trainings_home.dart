@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
+import 'package:trainings_and_assessments/assessments/pages/splash_screen.dart';
 import 'package:trainings_and_assessments/trainings/pages/filter_category.dart';
 import 'package:trainings_and_assessments/trainings/pages/training_description.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/training_container.dart';
@@ -29,7 +30,10 @@ class _TrainingsHomeState extends State<TrainingsHome> {
         ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (ctx) => const SplashScreen()));
+            },
             icon: const Icon(Symbols.data_exploration),
             color: const Color(0xFF414ECA),
           ),

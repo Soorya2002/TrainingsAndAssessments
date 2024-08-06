@@ -120,7 +120,7 @@ class LeaderBoard extends StatelessWidget {
                       ),
                       TextSpan(
                         text: " are trying to Solve!  ",
-                        style:  TextStyle(
+                        style: TextStyle(
                           fontSize: 12,
                           fontWeight: FontWeight.w500,
                           color: Colors.black,

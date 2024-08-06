@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:trainings_and_assessments/assessments/pages/leaderboard.dart';
+import 'package:trainings_and_assessments/assessments/pages/leaderboard_technical.dart';
 
 class SubmitScreen extends StatefulWidget {
   const SubmitScreen({super.key});

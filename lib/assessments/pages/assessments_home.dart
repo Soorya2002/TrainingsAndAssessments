@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/details.dart';
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/custom_container.dart';
+import 'package:trainings_and_assessments/trainings/pages/leaderboard.dart';
 
 class AssessmentsHome extends StatelessWidget {
   const AssessmentsHome({super.key});
@@ -64,7 +65,12 @@ class AssessmentsHome extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => LeaderboardScreen()));
+                },
                 icon: Image.asset('assets/icons/social_leaderboard.png')),
           ),
         ],

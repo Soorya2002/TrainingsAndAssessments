@@ -48,7 +48,7 @@ class InstructionScreen extends StatelessWidget {
                 const Text(
                   "Instructions to ShareInfo Assessments*",
                   style: TextStyle(
-                    color: CustomColor.secondaryColor,
+                    color: CustomColor.darkOrange,
                     fontSize: 12,
                     fontWeight: FontWeight.w700,
                   ),

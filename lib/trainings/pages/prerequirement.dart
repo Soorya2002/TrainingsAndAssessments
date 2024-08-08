@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/trainings/data/skill_data.dart';
 import 'package:trainings_and_assessments/trainings/model/skill_model.dart';
 import 'package:trainings_and_assessments/trainings/pages/confirmation_screen.dart';
@@ -77,7 +78,7 @@ class Prerequirement extends StatelessWidget {
                                 style: const TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 12,
-                                  color: Color(0xFF414ECA),
+                                  color: CustomColor.darkBlue,
                                 ),
                               ),
                             ),
@@ -87,8 +88,8 @@ class Prerequirement extends StatelessWidget {
                               itemCount: category.skills.length,
                               itemBuilder: (context, skillIndex) {
                                 final skill = category.skills[skillIndex];
-                                final subtitleLetter = String.fromCharCode(
-                                    97 + skillIndex); // 'a', 'b', 'c', ...
+                                final subtitleLetter =
+                                    String.fromCharCode(97 + skillIndex);
                                 return Padding(
                                   padding: const EdgeInsets.only(
                                       left: 16, bottom: 8),
@@ -101,7 +102,7 @@ class Prerequirement extends StatelessWidget {
                                         style: const TextStyle(
                                             fontWeight: FontWeight.w600,
                                             fontSize: 12,
-                                            color: Color(0xFF077BD8)),
+                                            color: CustomColor.lightBlue),
                                       ),
                                       Column(
                                         crossAxisAlignment:
@@ -120,14 +121,16 @@ class Prerequirement extends StatelessWidget {
                                                       fontSize: 12,
                                                       fontWeight:
                                                           FontWeight.bold,
-                                                      color: Color(0xFF8B8B8B)),
+                                                      color: CustomColor
+                                                          .fontColor),
                                                 ),
                                                 Expanded(
                                                   child: Text(
                                                     point,
                                                     style: const TextStyle(
                                                       fontSize: 12,
-                                                      color: Color(0xFF8B8B8B),
+                                                      color:
+                                                          CustomColor.fontColor,
                                                     ),
                                                   ),
                                                 ),
@@ -158,7 +161,7 @@ class Prerequirement extends StatelessWidget {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => PracticeScreen()));
               },
-              color: const Color(0xFF8B8B8B),
+              color: CustomColor.fontColor,
             ),
             CustomButton(
               text: 'I’m Ready for Training',
@@ -168,7 +171,7 @@ class Prerequirement extends StatelessWidget {
                     MaterialPageRoute(
                         builder: (ctx) => const ConfirmationScreen()));
               },
-              color: const Color(0xFF077BD8),
+              color: CustomColor.lightBlue,
             ),
             SizedBox(
               height: screenHeight * .02,

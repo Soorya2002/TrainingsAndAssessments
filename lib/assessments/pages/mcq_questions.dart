@@ -101,7 +101,7 @@ class _McqQuestionsState extends State<McqQuestions> {
                         style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w700,
-                          color: CustomColor.secondaryColor,
+                          color: CustomColor.darkOrange,
                         ),
                       ),
                       TextSpan(
@@ -116,7 +116,7 @@ class _McqQuestionsState extends State<McqQuestions> {
                         text: 'CE Thalassery',
                         style: TextStyle(
                           fontSize: 14,
-                          color: CustomColor.primaryColor,
+                          color: CustomColor.darkBlue,
                           fontWeight: FontWeight.w700,
                         ),
                       )
@@ -134,18 +134,18 @@ class _McqQuestionsState extends State<McqQuestions> {
                     children: [
                       TextBox(
                           text: 'Q${_currentIndex + 1}',
-                          textColor: CustomColor.secondaryColor,
-                          borderColor: CustomColor.secondaryColor),
+                          textColor: CustomColor.darkOrange,
+                          borderColor: CustomColor.darkOrange),
                       const TextBox(
                           text: '00:59',
-                          textColor: CustomColor.secondaryColor,
-                          borderColor: CustomColor.secondaryColor),
+                          textColor: CustomColor.darkOrange,
+                          borderColor: CustomColor.darkOrange),
                     ],
                   ),
                   TextBox(
                       text: 'Q${_currentIndex + 1}/25',
-                      textColor: CustomColor.secondaryColor,
-                      borderColor: CustomColor.secondaryColor)
+                      textColor: CustomColor.darkOrange,
+                      borderColor: CustomColor.darkOrange)
                 ],
               ),
               Container(
@@ -164,7 +164,7 @@ class _McqQuestionsState extends State<McqQuestions> {
                         style: const TextStyle(
                           fontSize: 13,
                           fontWeight: FontWeight.w700,
-                          color: CustomColor.secondaryColor,
+                          color: CustomColor.darkOrange,
                         ),
                       ),
                     ),
@@ -196,8 +196,8 @@ class _McqQuestionsState extends State<McqQuestions> {
                               ),
                               TextBox(
                                 text: option,
-                                textColor: CustomColor.primaryColor,
-                                borderColor: CustomColor.primaryColor,
+                                textColor: CustomColor.darkBlue,
+                                borderColor: CustomColor.darkBlue,
                               ),
                             ],
                           ),
@@ -216,7 +216,7 @@ class _McqQuestionsState extends State<McqQuestions> {
                   style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.w700,
-                      color: CustomColor.secondaryColor),
+                      color: CustomColor.darkOrange),
                 ),
               ),
               SizedBox(

@@ -11,11 +11,12 @@ class AssessmentdetailedScreen extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
+      appBar: AppBar(),
       body: Center(
         child: Column(
           children: [
             SizedBox(
-              height: screenHeight * .3,
+              height: screenHeight * .22,
             ),
             Image.asset(
               'assets/images/assessment.gif',

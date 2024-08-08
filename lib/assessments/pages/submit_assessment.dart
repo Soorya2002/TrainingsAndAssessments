@@ -50,6 +50,7 @@ class _SubmitScreenState extends State<SubmitScreen> {
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
+      appBar: AppBar(),
       body: Column(
         children: [
           SizedBox(
@@ -87,7 +88,7 @@ class _SubmitScreenState extends State<SubmitScreen> {
             ],
           ),
           SizedBox(
-            height: screenHeight * .3,
+            height: screenHeight * .2,
           ),
           RichText(
               text: const TextSpan(children: [

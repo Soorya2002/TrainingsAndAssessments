@@ -11,10 +11,11 @@ class PracticeScreen extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
+      appBar: AppBar(),
       body: Column(
         children: [
           SizedBox(
-            height: screenHeight * .26,
+            height: screenHeight * .2,
           ),
           Image.asset(
             'assets/images/error1.gif',
@@ -120,7 +121,7 @@ class PracticeScreen extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: screenHeight * .22,
+            height: screenHeight * .2,
           ),
           CustomButton(
             text: 'Return Trainings !',

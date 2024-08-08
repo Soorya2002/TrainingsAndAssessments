@@ -3,7 +3,7 @@ import 'package:trainings_and_assessments/assessments/data/instructions.dart';
 import 'package:trainings_and_assessments/assessments/model/Instruction_shareinfo.dart';
 import 'package:trainings_and_assessments/assessments/pages/mcq_questions.dart';
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
-import 'package:trainings_and_assessments/assessments/widgets/global/custom_button.dart';
+import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
 class InstructionScreen extends StatelessWidget {
   const InstructionScreen({super.key});
@@ -44,7 +44,7 @@ class InstructionScreen extends StatelessWidget {
                 SizedBox(
                   height: screenHeight * .007,
                 ),
-                Text(
+                const Text(
                   "Instructions to ShareInfo Assessments*",
                   style: TextStyle(
                     color: CustomColor.secondaryColor,
@@ -52,7 +52,7 @@ class InstructionScreen extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                Text(
+                const Text(
                   textAlign: TextAlign.center,
                   "Multiple Choice Questions (MCQs) (Estimated Time: 30 minutes)",
                   style: TextStyle(
@@ -73,7 +73,7 @@ class InstructionScreen extends StatelessWidget {
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              const Text(
                                 ' • ',
                                 style: TextStyle(
                                   fontWeight: FontWeight.w700,
@@ -84,7 +84,7 @@ class InstructionScreen extends StatelessWidget {
                               Expanded(
                                 child: Text(
                                   instructions[index].point,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     color: CustomColor.fontColor,
                                     fontSize: 12,
                                     fontWeight: FontWeight.w700,
@@ -99,7 +99,7 @@ class InstructionScreen extends StatelessWidget {
                               return Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
+                                  const Text(
                                     '     •  ',
                                     style: TextStyle(
                                       fontWeight: FontWeight.w700,
@@ -110,7 +110,7 @@ class InstructionScreen extends StatelessWidget {
                                   Expanded(
                                     child: Text(
                                       subPoint,
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                         color: CustomColor.fontColor,
                                         fontSize: 12,
                                         fontWeight: FontWeight.w700,
@@ -126,16 +126,19 @@ class InstructionScreen extends StatelessWidget {
                     },
                   ),
                 ),
-                CustomButton(
-                    text: 'Start Now',
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) =>  McqQuestions(),
-                        ),
-                      );
-                    })
+                Padding(
+                  padding: const EdgeInsets.only(top: 20),
+                  child: CustomButton(
+                      text: 'Start Now',
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const McqQuestions(),
+                          ),
+                        );
+                      }),
+                )
               ],
             ),
           ),

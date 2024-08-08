@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:material_symbols_icons/symbols.dart';
 import 'package:trainings_and_assessments/trainings/data/skill_data.dart';
 import 'package:trainings_and_assessments/trainings/model/skill_model.dart';
 import 'package:trainings_and_assessments/trainings/pages/confirmation_screen.dart';
@@ -19,19 +18,9 @@ class Prerequirement extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Trainings',
+          'Prepare',
           style: TextStyle(fontSize: 18),
         ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Symbols.data_exploration),
-            color: const Color(0xFF414ECA),
-          ),
-          SizedBox(
-            width: screenWidth * .03,
-          ),
-        ],
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,

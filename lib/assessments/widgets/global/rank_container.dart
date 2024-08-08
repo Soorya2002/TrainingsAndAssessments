@@ -172,7 +172,9 @@ class RankContainer extends StatelessWidget {
               Positioned(
                 top: -10,
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
                   child: Image.asset('assets/icons/back_arrow.png'),
                 ),
               ),

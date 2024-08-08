@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/details.dart';
+import 'package:trainings_and_assessments/assessments/pages/splash_screen.dart';
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/custom_container.dart';
 import 'package:trainings_and_assessments/trainings/pages/leaderboard.dart';
@@ -50,7 +51,8 @@ class AssessmentsHome extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(context);
+            Navigator.push(context,
+                MaterialPageRoute(builder: (ctx) => const SplashScreen()));
           },
           icon: const Icon(Icons.arrow_back),
         ),

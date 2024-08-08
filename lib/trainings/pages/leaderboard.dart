@@ -9,10 +9,11 @@ class LeaderboardScreen extends StatelessWidget {
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
+      appBar: AppBar(),
       body: Column(
         children: [
           SizedBox(
-            height: screenHeight * .25,
+            height: screenHeight * .15,
           ),
           Image.asset(
             'assets/images/leaderboard.gif',
@@ -97,21 +98,18 @@ class LeaderboardScreen extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: screenHeight * .12,
+            height: screenHeight * .15,
           ),
           const Text(
             "Start an Assessment!",
             style: TextStyle(
+              decoration: TextDecoration.underline,
               color: Color(0xFF8B8B8B),
               fontSize: 11,
               fontWeight: FontWeight.w700,
             ),
           ),
-          Container(
-            width: screenWidth * .27,
-            height: screenHeight * .001,
-            color: Color(0xFF8B8B8B),
-          ),
+
           // SizedBox(
           //   height: screenHeight * .01,
           // ),

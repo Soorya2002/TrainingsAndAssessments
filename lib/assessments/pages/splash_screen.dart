@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/assessments_home.dart';
-import 'package:trainings_and_assessments/assessments/widgets/global/custom_button.dart';
+import 'package:trainings_and_assessments/trainings/pages/trainings_home.dart';
+import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -10,10 +11,19 @@ class SplashScreen extends StatelessWidget {
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (ctx) => const TrainingsHome()));
+          },
+          icon: const Icon(Icons.arrow_back),
+        ),
+      ),
       body: Column(
         children: [
           SizedBox(
-            height: screenHeight * .2,
+            height: screenHeight * .12,
           ),
           Padding(
             padding: EdgeInsets.all(

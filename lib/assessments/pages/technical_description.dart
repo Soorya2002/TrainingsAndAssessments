@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/technical.dart';
-import 'package:trainings_and_assessments/assessments/widgets/global/custom_button.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/instruction_container.dart';
+import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
 class TechnicalDescription extends StatelessWidget {
   const TechnicalDescription({super.key});
@@ -33,9 +33,17 @@ class TechnicalDescription extends StatelessWidget {
           child: Column(
             children: [
               const InstructionContainer(),
-              CustomButton(text: 'Attempt Now', onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (ctx)=>const TechnicalAssessment()));
-              })
+              SizedBox(
+                height: 20,
+              ),
+              CustomButton(
+                  text: 'Attempt Now',
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (ctx) => const TechnicalAssessment()));
+                  })
             ],
           ),
         ),

@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:material_symbols_icons/symbols.dart';
 import 'package:trainings_and_assessments/trainings/data/description_data.dart';
 import 'package:trainings_and_assessments/trainings/model/description.dart';
 import 'package:trainings_and_assessments/trainings/pages/assessmentdetailed.dart';
 import 'package:trainings_and_assessments/trainings/pages/prerequirement.dart';
-import 'package:trainings_and_assessments/trainings/widgets/global/training_container.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
+import 'package:trainings_and_assessments/trainings/widgets/global/training_container.dart';
 
 class TrainingDescription extends StatelessWidget {
   const TrainingDescription({super.key});
@@ -22,16 +21,6 @@ class TrainingDescription extends StatelessWidget {
           'Trainings',
           style: TextStyle(fontSize: 18),
         ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Symbols.data_exploration),
-            color: const Color(0xFF414ECA),
-          ),
-          SizedBox(
-            width: screenWidth * .03,
-          ),
-        ],
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,

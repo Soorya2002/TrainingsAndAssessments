@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/instruction_screen.dart';
-import 'package:trainings_and_assessments/assessments/widgets/global/custom_button.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/instruction_container.dart';
+import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
 class McqDescription extends StatelessWidget {
   const McqDescription({super.key});
@@ -33,6 +33,9 @@ class McqDescription extends StatelessWidget {
           child: Column(
             children: [
               const InstructionContainer(),
+              SizedBox(
+                height: 20,
+              ),
               CustomButton(
                   text: 'Attempt Now',
                   onPressed: () {

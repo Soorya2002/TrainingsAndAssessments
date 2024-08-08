@@ -4,8 +4,8 @@ import 'package:trainings_and_assessments/assessments/model/mcq_model.dart';
 import 'package:trainings_and_assessments/assessments/pages/exit_assessment.dart';
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/assessments/widgets/features/text_box.dart';
-import 'package:trainings_and_assessments/assessments/widgets/global/custom_button.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/dialogbox.dart';
+import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
 class McqQuestions extends StatefulWidget {
   const McqQuestions({super.key});
@@ -47,7 +47,8 @@ class _McqQuestionsState extends State<McqQuestions> {
           ),
           IconButton(
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (ctx)=>const ExitScreen()));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (ctx) => const ExitScreen()));
             },
             icon: Image.asset(
               'assets/icons/quit.png',
@@ -302,6 +303,9 @@ class _McqQuestionsState extends State<McqQuestions> {
                     ),
                   ),
                 ],
+              ),
+              SizedBox(
+                height: 10,
               ),
               CustomButton(
                   text: _currentIndex <= 2

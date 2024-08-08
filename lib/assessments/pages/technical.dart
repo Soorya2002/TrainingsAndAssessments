@@ -3,7 +3,8 @@ import 'package:trainings_and_assessments/assessments/pages/exit_assessment.dart
 import 'package:trainings_and_assessments/assessments/pages/submit_assessment.dart';
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/assessments/widgets/features/text_box.dart';
-import 'package:trainings_and_assessments/assessments/widgets/global/custom_button.dart';
+import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
+
 
 class TechnicalAssessment extends StatelessWidget {
   const TechnicalAssessment({super.key});

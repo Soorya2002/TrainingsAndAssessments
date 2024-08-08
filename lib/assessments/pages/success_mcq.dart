@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/technical_description.dart';
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
-import 'package:trainings_and_assessments/assessments/widgets/global/custom_button.dart';
+import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
 class SuccessMcq extends StatelessWidget {
   const SuccessMcq({super.key});
@@ -10,9 +10,10 @@ class SuccessMcq extends StatelessWidget {
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
     return Scaffold(
+      appBar: AppBar(),
       body: Column(
         children: [
-          SizedBox(height: screenSize.height * .23),
+          SizedBox(height: screenSize.height * .15),
           Image.asset(
             'assets/images/success_mcq.gif',
             height: screenSize.height * .4,

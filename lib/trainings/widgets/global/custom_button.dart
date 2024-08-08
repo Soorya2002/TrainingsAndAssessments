@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 
 class CustomButton extends StatelessWidget {
   final String text;
@@ -8,7 +9,7 @@ class CustomButton extends StatelessWidget {
       {super.key,
       required this.text,
       required this.onPressed,
-      required this.color});
+      this.color = CustomColor.primaryColor});
 
   @override
   Widget build(BuildContext context) {

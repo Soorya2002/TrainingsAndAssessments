@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/data/rounds_description.dart';
 import 'package:trainings_and_assessments/assessments/model/question_rounds.dart';
+import 'package:trainings_and_assessments/assessments/pages/leaderboard_technical.dart';
 import 'package:trainings_and_assessments/assessments/pages/mcq_description.dart';
 import 'package:trainings_and_assessments/assessments/pages/without_mcq.dart';
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
@@ -33,7 +34,10 @@ class QuestionRoundsDescription extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (ctx) => const LeaderBoard()));
+                },
                 icon: Image.asset('assets/icons/social_leaderboard.png')),
           ),
         ],

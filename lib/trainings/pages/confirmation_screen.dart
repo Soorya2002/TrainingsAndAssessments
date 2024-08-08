@@ -10,6 +10,7 @@ class ConfirmationScreen extends StatelessWidget {
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
+      appBar: AppBar(),
       body: Container(
         width: screenWidth,
         height: screenHeight,
@@ -17,7 +18,7 @@ class ConfirmationScreen extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(
-              height: screenHeight * .3,
+              height: screenHeight * .2,
             ),
             Image.asset(
               'assets/images/confo.gif',
@@ -35,7 +36,7 @@ class ConfirmationScreen extends StatelessWidget {
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
             ),
             SizedBox(
-              height: screenHeight * .12,
+              height: screenHeight * .15,
             ),
             CustomButton(
               text: 'Go to Home !',

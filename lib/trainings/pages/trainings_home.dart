@@ -43,9 +43,7 @@ class _TrainingsHomeState extends State<TrainingsHome> {
         ],
       ),
       endDrawer: const FilterCategory(),
-      body: SizedBox(
-        width: screenWidth,
-        height: screenHeight,
+      body: SingleChildScrollView(
         child: Column(
           children: [
             SizedBox(
@@ -99,30 +97,28 @@ class _TrainingsHomeState extends State<TrainingsHome> {
             SizedBox(
               height: screenHeight * .02,
             ),
-            Expanded(
-              child: ListView.builder(
-                itemCount: 5,
-                itemBuilder: (context, index) {
-                  return TrainingContainer(
-                    width: screenWidth * .9,
-                    // height: screenHeight * .22,
-                    text1: 'Python Basics',
-                    texta: 'ShareInfo\t',
-                    textb: 'for\t',
-                    textc: 'CE Thalassery',
-                    img: 'assets/images/python.png',
-                    text2: 'Dr. Subhash || IIT Madras',
-                    date: '07 Mar 2024; Thursday',
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  const TrainingDescription()));
-                    },
-                  );
-                },
-              ),
+            ListView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: 5,
+              itemBuilder: (context, index) {
+                return TrainingContainer(
+                  width: screenWidth * .9,
+                  text1: 'Python Basics',
+                  texta: 'ShareInfo\t',
+                  textb: 'for\t',
+                  textc: 'CE Thalassery',
+                  img: 'assets/images/python.png',
+                  text2: 'Dr. Subhash || IIT Madras',
+                  date: '07 Mar 2024; Thursday',
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const TrainingDescription()));
+                  },
+                );
+              },
             ),
             SizedBox(
               height: screenHeight * 0.03,

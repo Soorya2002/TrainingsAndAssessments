@@ -3,6 +3,7 @@ import 'package:trainings_and_assessments/assessments/data/training_features.dar
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/assessments/widgets/features/text_box.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/title_row.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 
 class CustomContainer extends StatelessWidget {
   final String assessmentName;
@@ -41,12 +42,12 @@ class CustomContainer extends StatelessWidget {
           child: Column(
             children: [
               const TitleRow(
-                imagePath: 'assets/images/python.png',
+                imagePath: ImagePath.pythonPng,
                 assessmentTitle: 'Python Basics',
                 providerName: 'ShareInfo',
                 place: 'CE Thalassery',
                 iconButton: true,
-                iconPath: 'assets/icons/clock.png',
+                iconPath: ImagePath.clockPng,
               ),
               SizedBox(
                 height: screenWidth * 0.015,
@@ -66,20 +67,20 @@ class CustomContainer extends StatelessWidget {
                 children: [
                   TextBox(
                       text: TrainingFeatures.features[0],
-                      textColor: CustomColor.secondaryColor,
-                      borderColor: CustomColor.secondaryColor),
+                      textColor: CustomColor.darkOrange,
+                      borderColor: CustomColor.darkOrange),
                   TextBox(
                       text: TrainingFeatures.features[1],
-                      textColor: CustomColor.secondaryColor,
-                      borderColor: CustomColor.secondaryColor),
+                      textColor: CustomColor.darkOrange,
+                      borderColor: CustomColor.darkOrange),
                   TextBox(
                       text: TrainingFeatures.features[2],
-                      textColor: CustomColor.secondaryColor,
-                      borderColor: CustomColor.secondaryColor),
+                      textColor: CustomColor.darkOrange,
+                      borderColor: CustomColor.darkOrange),
                   TextBox(
                       text: TrainingFeatures.features[3],
-                      textColor: CustomColor.secondaryColor,
-                      borderColor: CustomColor.secondaryColor),
+                      textColor: CustomColor.darkOrange,
+                      borderColor: CustomColor.darkOrange),
                 ],
               ),
               Row(
@@ -87,12 +88,12 @@ class CustomContainer extends StatelessWidget {
                 children: [
                   TextBox(
                       text: TrainingFeatures.features[4],
-                      textColor: CustomColor.primaryColor,
-                      borderColor: CustomColor.primaryColor),
+                      textColor: CustomColor.darkBlue,
+                      borderColor: CustomColor.darkBlue),
                   TextBox(
                       text: TrainingFeatures.features[5],
-                      textColor: CustomColor.primaryColor,
-                      borderColor: CustomColor.primaryColor),
+                      textColor: CustomColor.darkBlue,
+                      borderColor: CustomColor.darkBlue),
                   TextBox(
                     text: TrainingFeatures.features[6],
                     textColor: const Color(0xFFF31919),

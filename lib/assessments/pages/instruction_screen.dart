@@ -3,6 +3,7 @@ import 'package:trainings_and_assessments/assessments/data/instructions.dart';
 import 'package:trainings_and_assessments/assessments/model/Instruction_shareinfo.dart';
 import 'package:trainings_and_assessments/assessments/pages/mcq_questions.dart';
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
 class InstructionScreen extends StatelessWidget {
@@ -29,7 +30,7 @@ class InstructionScreen extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(50),
                     child: Image.asset(
-                      'assets/images/start_assessment.gif',
+                      ImagePath.startAssessmentGif,
                     ),
                   ),
                 ),
@@ -37,7 +38,7 @@ class InstructionScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset(
-                      'assets/images/shareinfo_big.png',
+                      ImagePath.shareInfoBigPng,
                     ),
                   ],
                 ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 
 class AspirantBox extends StatelessWidget {
   final double height, rightPosition;
@@ -63,7 +64,7 @@ class AspirantBox extends StatelessWidget {
                           ),
                           TextSpan(
                             text: user,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w700,
                               color: Color(0xFF34A853),
@@ -105,7 +106,7 @@ class AspirantBox extends StatelessWidget {
               bottomRight: const Radius.circular(20),
             ),
             child: Image.asset(
-              'assets/images/aspirant_bottom_right.png',
+              ImagePath.aspirantBottomRightPng,
             ),
           ),
         ),

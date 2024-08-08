@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/filter_box.dart';
 
 class FilterCategory extends StatefulWidget {
@@ -28,7 +29,7 @@ class _FilterCategoryState extends State<FilterCategory> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/images/shareinfo.png',
+                    ImagePath.shareInfoPng,
                   ),
                 ],
               ),

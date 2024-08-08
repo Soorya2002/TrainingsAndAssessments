@@ -3,6 +3,7 @@ import 'package:trainings_and_assessments/trainings/data/skill_data.dart';
 import 'package:trainings_and_assessments/trainings/model/skill_model.dart';
 import 'package:trainings_and_assessments/trainings/pages/confirmation_screen.dart';
 import 'package:trainings_and_assessments/trainings/pages/practice.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/training_container.dart';
 
@@ -28,7 +29,7 @@ class Prerequirement extends StatelessWidget {
           children: [
             TrainingContainer(
               width: screenWidth * 0.9,
-              img: 'assets/images/python.png',
+              img: ImagePath.pythonPng,
               text1: 'Python Basics',
               texta: 'ShareInfo\t',
               textb: 'for\t',

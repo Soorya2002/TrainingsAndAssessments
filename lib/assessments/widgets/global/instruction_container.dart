@@ -4,6 +4,7 @@ import 'package:trainings_and_assessments/assessments/model/instruction_model.da
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/assessments/widgets/features/text_box.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/title_row.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 
 class InstructionContainer extends StatelessWidget {
   const InstructionContainer({super.key});
@@ -26,12 +27,12 @@ class InstructionContainer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const TitleRow(
-            imagePath: 'assets/images/python.png',
+            imagePath: ImagePath.pythonPng,
             assessmentTitle: 'Python Basics',
             providerName: 'ShareInfo',
             place: 'CE Thalassery',
             iconButton: true,
-            iconPath: 'assets/icons/notification_add.png',
+            iconPath: ImagePath.notificationAddPng,
           ),
           SizedBox(
             height: screenWidth * 0.015,
@@ -46,8 +47,8 @@ class InstructionContainer extends StatelessWidget {
           SizedBox(
             height: screenHeight * 0.01,
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -58,7 +59,7 @@ class InstructionContainer extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                       color: CustomColor.fontColor),
                 ),
-                const Text(
+                Text(
                   "07 Mar 2024; Thursday",
                   style: TextStyle(
                     fontSize: 10,
@@ -80,18 +81,18 @@ class InstructionContainer extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return TextBox(
                     text: texts[index],
-                    textColor: CustomColor.secondaryColor,
-                    borderColor: CustomColor.secondaryColor,
+                    textColor: CustomColor.darkOrange,
+                    borderColor: CustomColor.darkOrange,
                     horizontalPadding: 23,
                     verticalPadding: 8,
                   );
                 }),
           ),
-          Center(
+          const Center(
             child: TextBox(
               text: "ShareInfo for Learn Assessment Ends on: 19 Mar 2024",
-              textColor: CustomColor.secondaryColor,
-              borderColor: CustomColor.secondaryColor,
+              textColor: CustomColor.darkOrange,
+              borderColor: CustomColor.darkOrange,
               horizontalPadding: 31.5,
               verticalPadding: 8,
             ),
@@ -99,13 +100,13 @@ class InstructionContainer extends StatelessWidget {
           SizedBox(
             height: screenHeight * 0.01,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 8.0),
             child: Text(
               'Instructions to ShareInfo Assessments*',
               style: TextStyle(
                 fontSize: 12,
-                color: CustomColor.secondaryColor,
+                color: CustomColor.darkOrange,
                 fontWeight: FontWeight.w600,
               ),
             ),
@@ -122,14 +123,14 @@ class InstructionContainer extends StatelessWidget {
                     children: [
                       TextSpan(
                         text: mcqInstructions[index].title,
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 13,
                             color: CustomColor.fontColor,
                             fontWeight: FontWeight.w600),
                       ),
                       TextSpan(
                         text: mcqInstructions[index].description,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 13,
                           color: CustomColor.fontColor,
                           fontWeight: FontWeight.w500,

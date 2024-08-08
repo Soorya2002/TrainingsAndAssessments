@@ -5,6 +5,7 @@ import 'package:trainings_and_assessments/assessments/model/skill_category.dart'
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/assessments/widgets/features/text_box.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/title_row.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 
 class AssessmentsDescription extends StatelessWidget {
   final String assessmentName;
@@ -42,7 +43,7 @@ class AssessmentsDescription extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const TitleRow(
-                imagePath: 'assets/images/python.png',
+                imagePath: ImagePath.pythonPng,
                 assessmentTitle: 'Python Basics',
                 providerName: 'ShareInfo',
                 place: 'CE Thalassery',
@@ -65,12 +66,12 @@ class AssessmentsDescription extends StatelessWidget {
                 children: [
                   TextBox(
                       text: TrainingFeatures.features[4],
-                      textColor: CustomColor.primaryColor,
-                      borderColor: CustomColor.primaryColor),
+                      textColor: CustomColor.darkBlue,
+                      borderColor: CustomColor.darkBlue),
                   TextBox(
                       text: TrainingFeatures.features[5],
-                      textColor: CustomColor.primaryColor,
-                      borderColor: CustomColor.primaryColor),
+                      textColor: CustomColor.darkBlue,
+                      borderColor: CustomColor.darkBlue),
                   TextBox(
                     text: TrainingFeatures.features[6],
                     textColor: const Color(0xFFF31919),
@@ -91,10 +92,10 @@ class AssessmentsDescription extends StatelessWidget {
               SizedBox(
                 height: screenHeight * 0.015,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  const SizedBox(
+                  SizedBox(
                     width: 8,
                   ),
                   Text(
@@ -102,7 +103,7 @@ class AssessmentsDescription extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 13,
                       fontWeight: FontWeight.w700,
-                      color: CustomColor.secondaryColor,
+                      color: CustomColor.darkOrange,
                     ),
                   ),
                 ],
@@ -121,10 +122,10 @@ class AssessmentsDescription extends StatelessWidget {
                       children: [
                         Text(
                           '${categoryIndex + 1}. ${category.title}:',
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
-                            color: CustomColor.primaryColor,
+                            color: CustomColor.darkBlue,
                           ),
                         ),
                         ...category.skills.asMap().entries.map((skillEntry) {
@@ -159,7 +160,7 @@ class AssessmentsDescription extends StatelessWidget {
                                         'iv',
                                         'v',
                                       ][pointIndex]}.$point',
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                         fontSize: 12,
                                         fontWeight: FontWeight.w600,
                                         color: CustomColor.fontColor,

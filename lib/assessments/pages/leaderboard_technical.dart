@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/aspirant_box.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/rank_container.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 
 class LeaderBoard extends StatelessWidget {
   const LeaderBoard({super.key});
@@ -21,7 +22,7 @@ class LeaderBoard extends StatelessWidget {
                 height: screenHeight * 0.1,
                 rightPosition: 0.05,
                 name: 'Ann Mary John',
-                imagePath: 'assets/images/profile.png',
+                imagePath: ImagePath.profilePng,
                 submissionTime: '3 Day 20 Hours',
                 rank: 15),
             Padding(
@@ -91,7 +92,7 @@ class LeaderBoard extends StatelessWidget {
                     child: AspirantBox(
                         height: 80,
                         name: 'Ann Mary John',
-                        imagePath: 'assets/images/profile.png',
+                        imagePath: ImagePath.profilePng,
                         submissionTime: '3 Day 20 Hours',
                         rank: index + 1),
                   );

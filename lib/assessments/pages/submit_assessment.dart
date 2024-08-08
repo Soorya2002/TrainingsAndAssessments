@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/leaderboard_technical.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 
 class SubmitScreen extends StatefulWidget {
   const SubmitScreen({super.key});
@@ -59,7 +60,7 @@ class _SubmitScreenState extends State<SubmitScreen> {
           Stack(
             children: [
               Image.asset(
-                'assets/images/allright.gif',
+                ImagePath.allRightGif,
               ),
               const Positioned(
                 bottom: 15,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/mcq_description.dart';
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
 class WithoutMcq extends StatelessWidget {
@@ -24,18 +25,18 @@ class WithoutMcq extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(50),
               child: Image.asset(
-                'assets/images/splash_screen.gif',
+                ImagePath.splashScreenGif,
               ),
             ),
           ),
-          Text(
+          const Text(
             "Technical Assessment",
             style: TextStyle(
                 fontSize: 21,
                 fontWeight: FontWeight.w700,
-                color: CustomColor.secondaryColor),
+                color: CustomColor.darkOrange),
           ),
-          Text(
+          const Text(
             textAlign: TextAlign.center,
             "Technical Assessments only Unlock When You \nSubmit MCQ Rounds",
             style: TextStyle(

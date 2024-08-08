@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/technical_description.dart';
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
 class SuccessMcq extends StatelessWidget {
@@ -15,7 +16,7 @@ class SuccessMcq extends StatelessWidget {
         children: [
           SizedBox(height: screenSize.height * .15),
           Image.asset(
-            'assets/images/success_mcq.gif',
+            ImagePath.successMcqGif,
             height: screenSize.height * .4,
             width: screenSize.width * .8,
           ),
@@ -30,7 +31,7 @@ class SuccessMcq extends StatelessWidget {
           SizedBox(
             height: screenSize.height * .007,
           ),
-          Center(
+          const Center(
             child: Text(
               "Leaderboards are only Available after the\n     Approval by your Institution side !",
               style: TextStyle(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 
 class AspirantImage extends StatelessWidget {
   final String text;
@@ -23,7 +24,7 @@ class AspirantImage extends StatelessWidget {
           ),
         ),
         Image.asset(
-          'assets/images/aspirant.png',
+          ImagePath.aspirantPng,
           height: height,
           width: width,
         ),

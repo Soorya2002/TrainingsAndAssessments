@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/assessments_home.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
 class ExitScreen extends StatelessWidget {
@@ -14,7 +15,7 @@ class ExitScreen extends StatelessWidget {
           SizedBox(
             height: screenHeight * .3,
           ),
-          Image.asset('assets/images/exit.gif'),
+          Image.asset(ImagePath.exitGif),
           const Text(
             "You were Quit the Assessment",
             style: TextStyle(

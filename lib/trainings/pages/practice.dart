@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/trainings/pages/trainings_home.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
 class PracticeScreen extends StatelessWidget {
@@ -18,7 +20,7 @@ class PracticeScreen extends StatelessWidget {
             height: screenHeight * .2,
           ),
           Image.asset(
-            'assets/images/error1.gif',
+            ImagePath.errorGif,
             width: screenWidth * 0.8,
           ),
           ShaderMask(
@@ -125,7 +127,7 @@ class PracticeScreen extends StatelessWidget {
           ),
           CustomButton(
             text: 'Return Trainings !',
-            color: Color(0xFF077BD8),
+            color: CustomColor.lightBlue,
             onPressed: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => TrainingsHome()));

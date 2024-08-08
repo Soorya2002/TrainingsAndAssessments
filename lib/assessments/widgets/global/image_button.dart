@@ -5,17 +5,16 @@ class ImageButton extends StatelessWidget {
   final String imagePath;
   final String text;
   final VoidCallback? onTap;
-  const ImageButton({
-    super.key,
-    required this.imagePath,
-    required this.text,
-    required this.onTap
-  });
+  const ImageButton(
+      {super.key,
+      required this.imagePath,
+      required this.text,
+      required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap:onTap,
+      onTap: onTap,
       child: Padding(
         padding: const EdgeInsets.all(10),
         child: Container(
@@ -32,7 +31,7 @@ class ImageButton extends StatelessWidget {
               ),
               Text(
                 text,
-                style: TextStyle(
+                style: const TextStyle(
                     fontSize: 11,
                     fontWeight: FontWeight.w700,
                     color: CustomColor.fontColor),

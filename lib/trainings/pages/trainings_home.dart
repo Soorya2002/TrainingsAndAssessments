@@ -3,6 +3,7 @@ import 'package:material_symbols_icons/material_symbols_icons.dart';
 import 'package:trainings_and_assessments/assessments/pages/splash_screen.dart';
 import 'package:trainings_and_assessments/trainings/pages/filter_category.dart';
 import 'package:trainings_and_assessments/trainings/pages/training_description.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/training_container.dart';
 
 class TrainingsHome extends StatefulWidget {
@@ -108,7 +109,7 @@ class _TrainingsHomeState extends State<TrainingsHome> {
                   texta: 'ShareInfo\t',
                   textb: 'for\t',
                   textc: 'CE Thalassery',
-                  img: 'assets/images/python.png',
+                  img: ImagePath.pythonPng,
                   text2: 'Dr. Subhash || IIT Madras',
                   date: '07 Mar 2024; Thursday',
                   onPressed: () {

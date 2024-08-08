@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/trainings/pages/trainings_home.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
 class AssessmentdetailedScreen extends StatelessWidget {
@@ -19,7 +21,7 @@ class AssessmentdetailedScreen extends StatelessWidget {
               height: screenHeight * .22,
             ),
             Image.asset(
-              'assets/images/assessment.gif',
+              ImagePath.assessmentGif,
               width: screenWidth * 0.9,
             ),
             SizedBox(
@@ -33,7 +35,7 @@ class AssessmentdetailedScreen extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 12,
-                    color: Color(0xFFEE5602),
+                    color: CustomColor.darkOrange,
                   ),
                 ),
                 const Text(
@@ -41,7 +43,7 @@ class AssessmentdetailedScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.w500,
-                    color: Color(0xFF260446),
+                    color: CustomColor.slateBlue,
                   ),
                 ),
                 const Text(
@@ -49,7 +51,7 @@ class AssessmentdetailedScreen extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     fontSize: 15,
-                    color: Color(0xFF260446),
+                    color: CustomColor.slateBlue,
                   ),
                 ),
                 SizedBox(
@@ -60,7 +62,7 @@ class AssessmentdetailedScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 10,
                     fontWeight: FontWeight.w600,
-                    color: Color(0xFF8B8B8B),
+                    color: CustomColor.fontColor,
                   ),
                 ),
                 SizedBox(
@@ -68,7 +70,7 @@ class AssessmentdetailedScreen extends StatelessWidget {
                 ),
                 CustomButton(
                   text: 'Return to Home !',
-                  color: const Color(0xFF414ECA),
+                  color: CustomColor.darkBlue,
                   onPressed: () {
                     Navigator.push(
                       context,

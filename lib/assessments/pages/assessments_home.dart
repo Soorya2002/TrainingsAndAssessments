@@ -4,6 +4,7 @@ import 'package:trainings_and_assessments/assessments/pages/splash_screen.dart';
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/custom_container.dart';
 import 'package:trainings_and_assessments/trainings/pages/leaderboard.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 
 class AssessmentsHome extends StatelessWidget {
   const AssessmentsHome({super.key});
@@ -18,31 +19,31 @@ class AssessmentsHome extends StatelessWidget {
       {
         'assessmentName': 'Python Basics Assessment',
         'providerName': 'ShareInfo',
-        'imagePath': 'assets/images/python.png',
+        'imagePath': ImagePath.pythonPng,
         'place': 'CE Thalassery',
       },
       {
         'assessmentName': 'Python Basics Assessment',
         'providerName': 'ShareInfo',
-        'imagePath': 'assets/images/python.png',
+        'imagePath': ImagePath.pythonPng,
         'place': 'CE Thalassery',
       },
       {
         'assessmentName': 'Python Basics Assessment',
         'providerName': 'ShareInfo',
-        'imagePath': 'assets/images/python.png',
+        'imagePath': ImagePath.pythonPng,
         'place': 'CE Thalassery',
       },
       {
         'assessmentName': 'Python Basics Assessment',
         'providerName': 'ShareInfo',
-        'imagePath': 'assets/images/python.png',
+        'imagePath': ImagePath.pythonPng,
         'place': 'CE Thalassery',
       },
       {
         'assessmentName': 'Python Basics Assessment',
         'providerName': 'ShareInfo',
-        'imagePath': 'assets/images/python.png',
+        'imagePath': ImagePath.pythonPng,
         'place': 'CE Thalassery',
       },
     ];
@@ -73,7 +74,7 @@ class AssessmentsHome extends StatelessWidget {
                       MaterialPageRoute(
                           builder: (context) => LeaderboardScreen()));
                 },
-                icon: Image.asset('assets/icons/social_leaderboard.png')),
+                icon: Image.asset(ImagePath.socialLeaderboardPng)),
           ),
         ],
       ),
@@ -134,7 +135,7 @@ class AssessmentsHome extends StatelessWidget {
                   return Padding(
                     padding:
                         EdgeInsets.symmetric(vertical: screenHeight * 0.02),
-                    child: Text(
+                    child: const Text(
                       "More Assessments will Load Soon !",
                       style: TextStyle(
                         color: CustomColor.fontColor,

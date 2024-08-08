@@ -5,6 +5,7 @@ import 'package:trainings_and_assessments/assessments/pages/exit_assessment.dart
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/assessments/widgets/features/text_box.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/dialogbox.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
 class McqQuestions extends StatefulWidget {
@@ -34,7 +35,7 @@ class _McqQuestionsState extends State<McqQuestions> {
       appBar: AppBar(
         leading: Padding(
           padding: const EdgeInsets.only(left: 10),
-          child: Image.asset('assets/images/shareinfo_medium.png'),
+          child: Image.asset(ImagePath.shareInfoMediumPng),
         ),
         actions: [
           const Text(
@@ -51,7 +52,7 @@ class _McqQuestionsState extends State<McqQuestions> {
                   MaterialPageRoute(builder: (ctx) => const ExitScreen()));
             },
             icon: Image.asset(
-              'assets/icons/quit.png',
+              ImagePath.quitPng,
             ),
           ),
         ],
@@ -64,9 +65,9 @@ class _McqQuestionsState extends State<McqQuestions> {
             children: [
               SizedBox(height: height * 0.12),
               Image.asset(
-                'assets/images/shareinfo_big.png',
+                ImagePath.shareInfoBigPng,
               ),
-              Row(
+              const Row(
                 children: [
                   Text(
                     "Title:",
@@ -76,7 +77,7 @@ class _McqQuestionsState extends State<McqQuestions> {
                       color: CustomColor.fontColor,
                     ),
                   ),
-                  const Text("  Python Basics",
+                  Text("  Python Basics",
                       style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w700,
@@ -85,7 +86,7 @@ class _McqQuestionsState extends State<McqQuestions> {
               ),
               Row(
                 children: [
-                  Text(
+                  const Text(
                     "Test by:",
                     style: TextStyle(
                       fontSize: 12,
@@ -94,7 +95,7 @@ class _McqQuestionsState extends State<McqQuestions> {
                     ),
                   ),
                   RichText(
-                    text: TextSpan(children: [
+                    text: const TextSpan(children: [
                       TextSpan(
                         text: '  ShareInfo',
                         style: TextStyle(
@@ -135,7 +136,7 @@ class _McqQuestionsState extends State<McqQuestions> {
                           text: 'Q${_currentIndex + 1}',
                           textColor: CustomColor.secondaryColor,
                           borderColor: CustomColor.secondaryColor),
-                      TextBox(
+                      const TextBox(
                           text: '00:59',
                           textColor: CustomColor.secondaryColor,
                           borderColor: CustomColor.secondaryColor),
@@ -160,7 +161,7 @@ class _McqQuestionsState extends State<McqQuestions> {
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
                         currentQuestion.question,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 13,
                           fontWeight: FontWeight.w700,
                           color: CustomColor.secondaryColor,
@@ -187,7 +188,7 @@ class _McqQuestionsState extends State<McqQuestions> {
                                     const EdgeInsets.symmetric(horizontal: 8),
                                 child: Text(
                                   '${String.fromCharCode(97 + index)}.',
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       fontSize: 12,
                                       fontWeight: FontWeight.w700,
                                       color: CustomColor.fontColor),
@@ -209,7 +210,7 @@ class _McqQuestionsState extends State<McqQuestions> {
               SizedBox(
                 height: height * 0.015,
               ),
-              Center(
+              const Center(
                 child: Text(
                   "Mark Your Answers",
                   style: TextStyle(
@@ -259,7 +260,7 @@ class _McqQuestionsState extends State<McqQuestions> {
               SizedBox(
                 height: height * 0.08,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
@@ -304,7 +305,7 @@ class _McqQuestionsState extends State<McqQuestions> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               CustomButton(

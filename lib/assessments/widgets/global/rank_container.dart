@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/widgets/features/aspirant_image.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 
 class RankContainer extends StatelessWidget {
   const RankContainer({super.key});
@@ -30,7 +31,7 @@ class RankContainer extends StatelessWidget {
                         borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(25),
                         ),
-                        child: Image.asset('assets/images/bottom_left.png'),
+                        child: Image.asset(ImagePath.bottomLeftPng),
                       ),
                     ),
                     Positioned(
@@ -40,7 +41,7 @@ class RankContainer extends StatelessWidget {
                         borderRadius: const BorderRadius.only(
                           topRight: Radius.circular(25),
                         ),
-                        child: Image.asset('assets/images/top_right.png'),
+                        child: Image.asset(ImagePath.topRightPng),
                       ),
                     ),
                     Positioned(
@@ -50,7 +51,7 @@ class RankContainer extends StatelessWidget {
                         borderRadius: const BorderRadius.only(
                           bottomRight: Radius.circular(25),
                         ),
-                        child: Image.asset('assets/images/bottom_right.png'),
+                        child: Image.asset(ImagePath.bottomRightPng),
                       ),
                     ),
                     Center(
@@ -175,7 +176,7 @@ class RankContainer extends StatelessWidget {
                   onTap: () {
                     Navigator.pop(context);
                   },
-                  child: Image.asset('assets/icons/back_arrow.png'),
+                  child: Image.asset(ImagePath.backArrowPng),
                 ),
               ),
             ],

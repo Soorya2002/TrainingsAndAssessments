@@ -33,7 +33,7 @@ class TechnicalDescription extends StatelessWidget {
           child: Column(
             children: [
               const InstructionContainer(),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               CustomButton(

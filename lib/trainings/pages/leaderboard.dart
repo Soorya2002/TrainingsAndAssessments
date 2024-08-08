@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
 class LeaderboardScreen extends StatelessWidget {
@@ -16,7 +18,7 @@ class LeaderboardScreen extends StatelessWidget {
             height: screenHeight * .15,
           ),
           Image.asset(
-            'assets/images/leaderboard.gif',
+            ImagePath.leaderboardGif,
             width: screenWidth * 0.9,
           ),
           SizedBox(
@@ -65,7 +67,7 @@ class LeaderboardScreen extends StatelessWidget {
               Text(
                 'You Haven’t Enough Permission to',
                 style: TextStyle(
-                  color: Color(0xFF414ECA),
+                  color: CustomColor.darkBlue,
                   fontSize: 13,
                   fontWeight: FontWeight.w700,
                 ),
@@ -73,7 +75,7 @@ class LeaderboardScreen extends StatelessWidget {
               Text(
                 'Access This Feature !',
                 style: TextStyle(
-                  color: Color(0xFF414ECA),
+                  color: CustomColor.darkBlue,
                   fontSize: 13,
                   fontWeight: FontWeight.w700,
                 ),
@@ -89,12 +91,12 @@ class LeaderboardScreen extends StatelessWidget {
               const Text(
                 'Connect with Your Campus Administration to Unlock  ',
                 style: TextStyle(
-                  color: Color(0xFF8B8B8B),
+                  color: CustomColor.fontColor,
                   fontSize: 11,
                   fontWeight: FontWeight.w700,
                 ),
               ),
-              Image.asset('assets/images/unlock.png'),
+              Image.asset(ImagePath.unlockPng),
             ],
           ),
           SizedBox(
@@ -104,7 +106,7 @@ class LeaderboardScreen extends StatelessWidget {
             "Start an Assessment!",
             style: TextStyle(
               decoration: TextDecoration.underline,
-              color: Color(0xFF8B8B8B),
+              color: CustomColor.fontColor,
               fontSize: 11,
               fontWeight: FontWeight.w700,
             ),
@@ -115,7 +117,7 @@ class LeaderboardScreen extends StatelessWidget {
           // ),
           CustomButton(
             text: 'Explore More',
-            color: Color(0xFF414ECA),
+            color: CustomColor.darkBlue,
             onPressed: () {},
           )
         ],

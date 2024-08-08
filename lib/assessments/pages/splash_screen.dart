@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/assessments_home.dart';
 import 'package:trainings_and_assessments/trainings/pages/trainings_home.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -32,7 +33,7 @@ class SplashScreen extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(50),
               child: Image.asset(
-                'assets/images/splash_screen.gif',
+                ImagePath.splashScreenGif,
               ),
             ),
           ),

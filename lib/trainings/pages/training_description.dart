@@ -3,6 +3,7 @@ import 'package:trainings_and_assessments/trainings/data/description_data.dart';
 import 'package:trainings_and_assessments/trainings/model/description.dart';
 import 'package:trainings_and_assessments/trainings/pages/assessmentdetailed.dart';
 import 'package:trainings_and_assessments/trainings/pages/prerequirement.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/training_container.dart';
 
@@ -28,7 +29,7 @@ class TrainingDescription extends StatelessWidget {
           children: [
             TrainingContainer(
               width: screenWidth * 0.9,
-              img: 'assets/images/python.png',
+              img: ImagePath.pythonPng,
               text1: 'Python Basics',
               texta: 'ShareInfo\t',
               textb: 'for\t',

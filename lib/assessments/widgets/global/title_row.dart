@@ -51,13 +51,13 @@ class TitleRow extends StatelessWidget {
                       children: [
                         TextSpan(
                           text: providerName,
-                          style: TextStyle(
-                            color: CustomColor.secondaryColor,
+                          style: const TextStyle(
+                            color: CustomColor.darkOrange,
                             fontSize: 13,
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        TextSpan(
+                        const TextSpan(
                           text: ' for ',
                           style: TextStyle(
                             color: CustomColor.fontColor,

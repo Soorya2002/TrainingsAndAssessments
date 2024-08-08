@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/question_rounds_description.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/description_container.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
 class AssessmentsDetails extends StatelessWidget {
@@ -30,7 +31,7 @@ class AssessmentsDetails extends StatelessWidget {
             const AssessmentsDescription(
                 assessmentName: 'Python Basics Assessment',
                 providerName: 'ShareInfo',
-                imagePath: 'assets/images/python.png',
+                imagePath: ImagePath.pythonPng,
                 place: 'CE Thalassery'),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 20),

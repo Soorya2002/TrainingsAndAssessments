@@ -7,6 +7,7 @@ import 'package:trainings_and_assessments/assessments/pages/without_mcq.dart';
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/image_button.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/title_row.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 
 class QuestionRoundsDescription extends StatelessWidget {
   const QuestionRoundsDescription({super.key});
@@ -38,7 +39,7 @@ class QuestionRoundsDescription extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (ctx) => const LeaderBoard()));
                 },
-                icon: Image.asset('assets/icons/social_leaderboard.png')),
+                icon: Image.asset(ImagePath.socialLeaderboardPng)),
           ),
         ],
       ),
@@ -49,7 +50,7 @@ class QuestionRoundsDescription extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const TitleRow(
-                imagePath: 'assets/images/python.png',
+                imagePath: ImagePath.pythonPng,
                 assessmentTitle: 'Python Basics',
                 providerName: 'ShareInfo',
                 place: 'CE Thalassery',
@@ -57,7 +58,7 @@ class QuestionRoundsDescription extends StatelessWidget {
               Row(
                 children: [
                   ImageButton(
-                    imagePath: 'assets/icons/mcq.png',
+                    imagePath: ImagePath.mcqPng,
                     text: 'MCQ',
                     onTap: () {
                       Navigator.push(
@@ -69,7 +70,7 @@ class QuestionRoundsDescription extends StatelessWidget {
                     },
                   ),
                   ImageButton(
-                    imagePath: 'assets/icons/technical.png',
+                    imagePath: ImagePath.technicalPng,
                     text: 'Technical',
                     onTap: () {
                       Navigator.push(
@@ -102,7 +103,7 @@ class QuestionRoundsDescription extends StatelessWidget {
                           const SizedBox(height: 4),
                           Text(
                             des[index].preDescription,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 13,
                               fontWeight: FontWeight.w600,
                               color: CustomColor.fontColor,
@@ -119,9 +120,8 @@ class QuestionRoundsDescription extends StatelessWidget {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
-                                      Padding(
-                                        padding:
-                                            const EdgeInsets.only(right: 8.0),
+                                      const Padding(
+                                        padding: EdgeInsets.only(right: 8.0),
                                         child: Text(
                                           '•',
                                           style: TextStyle(
@@ -134,7 +134,7 @@ class QuestionRoundsDescription extends StatelessWidget {
                                       Expanded(
                                         child: Text(
                                           point.point,
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                             fontSize: 13,
                                             fontWeight: FontWeight.w600,
                                             color: CustomColor.fontColor,
@@ -152,9 +152,9 @@ class QuestionRoundsDescription extends StatelessWidget {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 8.0),
+                                          const Padding(
+                                            padding:
+                                                EdgeInsets.only(right: 8.0),
                                             child: Text(
                                               '•',
                                               style: TextStyle(
@@ -167,7 +167,7 @@ class QuestionRoundsDescription extends StatelessWidget {
                                           Expanded(
                                             child: Text(
                                               subPoint,
-                                              style: TextStyle(
+                                              style: const TextStyle(
                                                 fontSize: 13,
                                                 fontWeight: FontWeight.w600,
                                                 color: CustomColor.fontColor,
@@ -185,7 +185,7 @@ class QuestionRoundsDescription extends StatelessWidget {
                           const SizedBox(height: 4),
                           Text(
                             des[index].endDescription,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 13,
                               color: CustomColor.fontColor,
                               fontWeight: FontWeight.w600,

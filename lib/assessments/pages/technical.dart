@@ -3,8 +3,8 @@ import 'package:trainings_and_assessments/assessments/pages/exit_assessment.dart
 import 'package:trainings_and_assessments/assessments/pages/submit_assessment.dart';
 import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/assessments/widgets/features/text_box.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
-
 
 class TechnicalAssessment extends StatelessWidget {
   const TechnicalAssessment({super.key});
@@ -18,7 +18,7 @@ class TechnicalAssessment extends StatelessWidget {
       appBar: AppBar(
         leading: Padding(
           padding: const EdgeInsets.only(left: 10),
-          child: Image.asset('assets/images/shareinfo_medium.png'),
+          child: Image.asset(ImagePath.shareInfoMediumPng),
         ),
         actions: [
           const Text(
@@ -31,10 +31,11 @@ class TechnicalAssessment extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (ctx)=>const ExitScreen()));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (ctx) => const ExitScreen()));
             },
             icon: Image.asset(
-              'assets/icons/quit.png',
+              ImagePath.quitPng,
             ),
           ),
         ],
@@ -47,25 +48,25 @@ class TechnicalAssessment extends StatelessWidget {
               SizedBox(
                 height: screenHeight * .05,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
                     children: [
                       TextBox(
                           text: '1',
-                          textColor: CustomColor.secondaryColor,
-                          borderColor: CustomColor.secondaryColor),
+                          textColor: CustomColor.darkOrange,
+                          borderColor: CustomColor.darkOrange),
                       TextBox(
                           text: '00:59',
-                          textColor: CustomColor.secondaryColor,
-                          borderColor: CustomColor.secondaryColor),
+                          textColor: CustomColor.darkOrange,
+                          borderColor: CustomColor.darkOrange),
                     ],
                   ),
                   TextBox(
                       text: '1/25',
-                      textColor: CustomColor.secondaryColor,
-                      borderColor: CustomColor.secondaryColor)
+                      textColor: CustomColor.darkOrange,
+                      borderColor: CustomColor.darkOrange)
                 ],
               ),
               SizedBox(
@@ -258,9 +259,14 @@ class TechnicalAssessment extends StatelessWidget {
                   color: Color(0xFF8B8B8B),
                 ),
               ),
-              CustomButton(text: 'Next Question', onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (ctx)=>const SubmitScreen()));
-              })
+              CustomButton(
+                  text: 'Next Question',
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (ctx) => const SubmitScreen()));
+                  })
             ],
           ),
         ),

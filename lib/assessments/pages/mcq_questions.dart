@@ -305,8 +305,8 @@ class _McqQuestionsState extends State<McqQuestions> {
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 10,
+              SizedBox(
+                height: height * .02,
               ),
               CustomButton(
                   text: _currentIndex <= 2

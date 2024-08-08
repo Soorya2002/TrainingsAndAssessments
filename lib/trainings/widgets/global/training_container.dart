@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/features/text_box.dart';
 
@@ -41,13 +42,13 @@ class TrainingContainer extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Container(
             width: screenWidth * .9,
-            padding: EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(8.0),
             // height: height,
             decoration: BoxDecoration(
               border:
                   Border.all(color: const Color.fromARGB(102, 139, 139, 139)),
               borderRadius: BorderRadius.circular(25),
-              color: Colors.white,
+              color: CustomColor.white,
             ),
             child: Column(
               children: [
@@ -64,11 +65,10 @@ class TrainingContainer extends StatelessWidget {
                               padding: EdgeInsets.all(8),
                               decoration: BoxDecoration(
                                   border: Border.all(
-                                    color: const Color.fromARGB(
-                                        102, 139, 139, 139),
+                                    color: CustomColor.transparent,
                                   ),
                                   borderRadius: BorderRadius.circular(12.5),
-                                  color: Colors.white),
+                                  color: CustomColor.white),
                               child: Image.asset(img)),
                         ),
                         Column(
@@ -90,7 +90,7 @@ class TrainingContainer extends StatelessWidget {
                                   TextSpan(
                                     text: texta,
                                     style: const TextStyle(
-                                      color: Colors.orange,
+                                      color: CustomColor.darkOrange,
                                       fontSize: 13,
                                       fontWeight: FontWeight.w700,
                                     ),
@@ -98,7 +98,7 @@ class TrainingContainer extends StatelessWidget {
                                   TextSpan(
                                     text: textb,
                                     style: const TextStyle(
-                                      color: Color(0xFF8B8B8B),
+                                      color: CustomColor.fontColor,
                                       fontSize: 13,
                                       fontWeight: FontWeight.w700,
                                     ),
@@ -106,7 +106,7 @@ class TrainingContainer extends StatelessWidget {
                                   TextSpan(
                                     text: textc,
                                     style: const TextStyle(
-                                      color: Color(0xFF077BD8),
+                                      color: CustomColor.lightBlue,
                                       fontSize: 13,
                                       fontWeight: FontWeight.w700,
                                     ),
@@ -118,14 +118,18 @@ class TrainingContainer extends StatelessWidget {
                         ),
                       ],
                     ),
-                    icon?IconButton(onPressed: () {}, icon: Image.asset(ImagePath.notificationAddPng)):const Text('')
+                    icon
+                        ? IconButton(
+                            onPressed: () {},
+                            icon: Image.asset(ImagePath.notificationAddPng))
+                        : const Text('')
                   ],
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
                     height: screenHeight * .001,
-                    color: const Color(0xFFD9D9D9),
+                    color: CustomColor.grey,
                   ),
                 ),
                 Row(
@@ -139,7 +143,7 @@ class TrainingContainer extends StatelessWidget {
                           Text(
                             text2,
                             style: const TextStyle(
-                              color: Color(0xFF8B8B8B),
+                              color: CustomColor.fontColor,
                               fontSize: 12.5,
                               fontWeight: FontWeight.w700,
                             ),
@@ -149,8 +153,8 @@ class TrainingContainer extends StatelessWidget {
                               TextBox(
                                 width: screenWidth * .2,
                                 text: 'On-Site',
-                                borderColor: Color(0xFF1B94F6),
-                                textColor: Color(0xFF1B94F6),
+                                borderColor: CustomColor.lightBlue,
+                                textColor: CustomColor.lightBlue,
                               ),
                               const SizedBox(
                                 width: 10,
@@ -160,7 +164,7 @@ class TrainingContainer extends StatelessWidget {
                                 style: const TextStyle(
                                   fontSize: 11,
                                   fontWeight: FontWeight.w700,
-                                  color: Color(0xFFF31919),
+                                  color: CustomColor.darkRed,
                                 ),
                               ),
                             ],
@@ -171,8 +175,8 @@ class TrainingContainer extends StatelessWidget {
                           TextBox(
                             width: screenWidth * .5,
                             text: 'ShareInfo for Learn Assessment',
-                            borderColor: Color(0xffEE5602),
-                            textColor: Color(0xffEE5602),
+                            borderColor: CustomColor.darkOrange,
+                            textColor: CustomColor.darkOrange,
                           ),
                         ],
                       ),

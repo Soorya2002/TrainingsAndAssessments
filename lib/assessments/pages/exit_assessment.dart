@@ -42,7 +42,7 @@ class ExitScreen extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: screenHeight * .2,
+            height: screenHeight * .16,
           ),
           CustomButton(
             text: 'Exit Now!',

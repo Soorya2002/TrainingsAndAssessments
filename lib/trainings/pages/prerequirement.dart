@@ -46,7 +46,7 @@ class Prerequirement extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
                         height: screenHeight * .001,
-                        color: const Color(0xFFD9D9D9),
+                        color: CustomColor.grey,
                       ),
                     ),
                     SizedBox(
@@ -59,7 +59,7 @@ class Prerequirement extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 13,
                             fontWeight: FontWeight.w700,
-                            color: Color(0xFFEE5602)),
+                            color: CustomColor.darkOrange),
                       ),
                     ),
                     ListView.builder(

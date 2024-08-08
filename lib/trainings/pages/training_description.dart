@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/trainings/data/description_data.dart';
 import 'package:trainings_and_assessments/trainings/model/description.dart';
 import 'package:trainings_and_assessments/trainings/pages/assessmentdetailed.dart';
@@ -45,7 +46,7 @@ class TrainingDescription extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
                         height: screenHeight * .001,
-                        color: const Color(0xFFD9D9D9),
+                        color: CustomColor.grey,
                       ),
                     ),
                     SizedBox(
@@ -58,7 +59,7 @@ class TrainingDescription extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 13,
                             fontWeight: FontWeight.w700,
-                            color: Color(0xFFEE5602)),
+                            color: CustomColor.darkOrange),
                       ),
                     ),
                     ListView.builder(
@@ -79,7 +80,7 @@ class TrainingDescription extends StatelessWidget {
                                   style: const TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 12,
-                                    color: Color(0xFF414ECA),
+                                    color: CustomColor.darkBlue,
                                   ),
                                 ),
                               ),
@@ -101,7 +102,7 @@ class TrainingDescription extends StatelessWidget {
                                             point,
                                             style: const TextStyle(
                                               fontSize: 12,
-                                              color: Color(0xFF8B8B8B),
+                                              color: CustomColor.fontColor,
                                             ),
                                           ),
                                         ),
@@ -117,7 +118,8 @@ class TrainingDescription extends StatelessWidget {
                     ),
                     const Text(
                       'This training will equip you with the essential building blocks of Python programming. By the end, you\'ll be able to write simple Python programs and have a strong foundation for further learning.',
-                      style: TextStyle(fontSize: 12, color: Color(0xFF8B8B8B)),
+                      style:
+                          TextStyle(fontSize: 12, color: CustomColor.fontColor),
                     ),
                   ],
                 ),
@@ -129,7 +131,7 @@ class TrainingDescription extends StatelessWidget {
             CustomButton(
               text: 'Remind Me',
               onPressed: () {},
-              color: const Color(0xFF8B8B8B),
+              color: CustomColor.fontColor,
             ),
             CustomButton(
               text: 'Check Pre-Requirements',
@@ -139,7 +141,7 @@ class TrainingDescription extends StatelessWidget {
                     MaterialPageRoute(
                         builder: (context) => const Prerequirement()));
               },
-              color: const Color(0xFF077BD8),
+              color: CustomColor.lightBlue,
             ),
             CustomButton(
               text: 'Start Assessment',
@@ -150,7 +152,7 @@ class TrainingDescription extends StatelessWidget {
                         builder: (context) =>
                             const AssessmentdetailedScreen()));
               },
-              color: const Color(0xFF414ECA),
+              color: CustomColor.darkBlue,
             ),
             SizedBox(
               height: screenHeight * .02,

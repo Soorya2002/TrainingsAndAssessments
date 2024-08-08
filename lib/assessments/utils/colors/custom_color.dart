@@ -13,6 +13,9 @@ class CustomColor {
   static const Color black = Colors.black;
   static const Color whiteShade = Color(0xFFE1D7D7);
   static const Color whiteShade2 = Color(0xFFD9D9D9);
+  static const Color pastelPurple = Color(0xFFF5F1FF);
   static const Color white = Colors.white;
   static const Color green = Color(0xff34A853);
+  static const Color vividPink = Color(0xFFDA4ED5);
+  static const Color darkPink = Color(0xFFFF3288);
 }

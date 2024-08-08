@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/splash_screen.dart';
+import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/trainings/pages/filter_category.dart';
 import 'package:trainings_and_assessments/trainings/pages/training_description.dart';
 import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
@@ -35,7 +36,7 @@ class _TrainingsHomeState extends State<TrainingsHome> {
                   MaterialPageRoute(builder: (ctx) => const SplashScreen()));
             },
             icon: Image.asset(ImagePath.dataExploration),
-            color: const Color(0xFF414ECA),
+            color: CustomColor.darkBlue,
           ),
           SizedBox(
             width: screenWidth * .03,
@@ -59,7 +60,7 @@ class _TrainingsHomeState extends State<TrainingsHome> {
                   style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w700,
-                      color: Color(0xFF414ECA)),
+                      color: CustomColor.darkBlue),
                 ),
               ],
             ),
@@ -73,12 +74,12 @@ class _TrainingsHomeState extends State<TrainingsHome> {
                 child: TextField(
                     decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color(0x7fd9d9d9),
+                  fillColor: CustomColor.grey,
                   prefixIcon: const Icon(Icons.search),
-                  prefixIconColor: const Color(0xFFABABAB),
+                  prefixIconColor: CustomColor.lightGrey,
                   hintText: 'search',
                   hintStyle: const TextStyle(
-                    color: Color(0xFFABABAB),
+                    color: CustomColor.lightGrey,
                   ),
                   suffixIcon: IconButton(
                     onPressed: () {
@@ -86,7 +87,7 @@ class _TrainingsHomeState extends State<TrainingsHome> {
                     },
                     icon: Image.asset(ImagePath.filter),
                   ),
-                  suffixIconColor: const Color(0xFF4285F4),
+                  suffixIconColor: CustomColor.darkBlue,
                   border: InputBorder.none,
                 )),
               ),

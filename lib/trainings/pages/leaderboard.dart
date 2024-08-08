@@ -32,7 +32,7 @@ class LeaderboardScreen extends StatelessWidget {
               const Text(
                 "ShareInfo",
                 style: TextStyle(
-                  color: Color(0xFFF9772E),
+                  color: CustomColor.darkOrange,
                   fontSize: 30,
                   fontWeight: FontWeight.w700,
                 ),
@@ -45,7 +45,7 @@ class LeaderboardScreen extends StatelessWidget {
           ShaderMask(
             shaderCallback: (Rect bounds) {
               return const LinearGradient(
-                colors: [Color(0xFFDA4ED5), Color(0xFFFF3288)],
+                colors: [CustomColor.vividPink, CustomColor.darkPink],
                 begin: Alignment.topLeft,
                 end: Alignment.topRight,
               ).createShader(bounds);
@@ -55,7 +55,7 @@ class LeaderboardScreen extends StatelessWidget {
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.w700,
-                color: Colors.white,
+                color: CustomColor.white,
               ),
             ),
           ),
@@ -100,7 +100,7 @@ class LeaderboardScreen extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: screenHeight * .15,
+            height: screenHeight * .13,
           ),
           const Text(
             "Start an Assessment!",

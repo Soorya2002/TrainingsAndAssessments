@@ -49,7 +49,7 @@ class SplashScreen extends StatelessWidget {
                   topLeft: Radius.circular(30),
                   topRight: Radius.circular(30),
                 ),
-                color: CustomColor.whiteShade2,
+                color: CustomColor.pastelPurple,
               ),
               child: Stack(
                 alignment: Alignment.center,

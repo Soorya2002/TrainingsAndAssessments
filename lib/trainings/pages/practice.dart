@@ -26,7 +26,7 @@ class PracticeScreen extends StatelessWidget {
           ShaderMask(
             shaderCallback: (Rect bounds) {
               return const LinearGradient(
-                colors: [Color(0xFFF94612), Color(0xFF4A46FA)],
+                colors: [CustomColor.darkOrange, CustomColor.darkBlue],
                 begin: Alignment.topLeft,
                 end: Alignment.topRight,
               ).createShader(bounds);
@@ -36,7 +36,7 @@ class PracticeScreen extends StatelessWidget {
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.w700,
-                color: Colors.white,
+                color: CustomColor.white,
               ),
             ),
           ),
@@ -88,7 +88,7 @@ class PracticeScreen extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 11,
                   fontWeight: FontWeight.w500,
-                  color: Color(0xFFF94612),
+                  color: CustomColor.darkOrange,
                 ),
               ),
               Text(
@@ -96,7 +96,7 @@ class PracticeScreen extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 11,
                   fontWeight: FontWeight.w800,
-                  color: Color(0xFFF94612),
+                  color: CustomColor.darkOrange,
                 ),
               ),
               Row(
@@ -107,7 +107,7 @@ class PracticeScreen extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 11,
                       fontWeight: FontWeight.w600,
-                      color: Color(0xFFF94612),
+                      color: CustomColor.darkOrange,
                     ),
                   ),
                   Text(
@@ -115,7 +115,7 @@ class PracticeScreen extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 11,
                       fontWeight: FontWeight.w800,
-                      color: Color(0xFFF94612),
+                      color: CustomColor.darkOrange,
                     ),
                   ),
                 ],

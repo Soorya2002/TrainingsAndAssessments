@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 
 class AspirantImage extends StatelessWidget {
@@ -20,7 +21,7 @@ class AspirantImage extends StatelessWidget {
           style: TextStyle(
             fontSize: fontSize,
             fontWeight: FontWeight.w700,
-            color: const Color(0xFF3A0070),
+            color: CustomColor.slateBlue,
           ),
         ),
         Image.asset(
@@ -33,7 +34,7 @@ class AspirantImage extends StatelessWidget {
           style: TextStyle(
             fontSize: fontSize,
             fontWeight: FontWeight.w700,
-            color: const Color(0xFF3A0070),
+            color: CustomColor.slateBlue,
           ),
         ),
       ],

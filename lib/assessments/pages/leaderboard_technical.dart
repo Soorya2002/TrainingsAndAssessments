@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/aspirant_box.dart';
 import 'package:trainings_and_assessments/assessments/widgets/global/rank_container.dart';
 import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
@@ -33,19 +34,19 @@ class LeaderBoard extends StatelessWidget {
                   Container(
                     width: screenWidth * .39,
                     height: 2,
-                    color: const Color(0xFFE1D7D7),
+                    color: CustomColor.whiteShade,
                   ),
                   SizedBox(width: screenWidth * .01),
                   Container(
                     width: screenWidth * .1,
                     height: 2,
-                    color: const Color(0xFFE1D7D7),
+                    color: CustomColor.whiteShade,
                   ),
                   SizedBox(width: screenWidth * .01),
                   Container(
                     width: screenWidth * .39,
                     height: 2,
-                    color: const Color(0xFFE1D7D7),
+                    color: CustomColor.whiteShade,
                   ),
                 ],
               ),
@@ -64,7 +65,7 @@ class LeaderBoard extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w700,
-                              color: Color(0xFF3A0070),
+                              color: CustomColor.slateBlue,
                             ),
                           ),
                           TextSpan(
@@ -72,7 +73,7 @@ class LeaderBoard extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w700,
-                              color: Color(0xFF414ECA),
+                              color: CustomColor.darkBlue,
                             ),
                           ),
                         ],
@@ -106,7 +107,7 @@ class LeaderBoard extends StatelessWidget {
                 Container(
                   width: screenWidth * .2,
                   height: 2,
-                  color: const Color(0xFFE1D7D7),
+                  color: CustomColor.whiteShade,
                 ),
                 RichText(
                   text: const TextSpan(
@@ -116,7 +117,7 @@ class LeaderBoard extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 12,
                           fontWeight: FontWeight.w600,
-                          color: Colors.black,
+                          color: CustomColor.black,
                         ),
                       ),
                       TextSpan(
@@ -124,7 +125,7 @@ class LeaderBoard extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 12,
                           fontWeight: FontWeight.w500,
-                          color: Colors.black,
+                          color: CustomColor.black,
                         ),
                       ),
                     ],
@@ -133,7 +134,7 @@ class LeaderBoard extends StatelessWidget {
                 Container(
                   width: screenWidth * .2,
                   height: 2,
-                  color: const Color(0xFFE1D7D7),
+                  color: CustomColor.whiteShade,
                 ),
               ],
             ),

@@ -55,7 +55,7 @@ class AssessmentsDescription extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: Container(
                   height: screenHeight * 0.001,
-                  color: const Color(0xFFD9D9D9),
+                  color: CustomColor.whiteShade2,
                 ),
               ),
               SizedBox(
@@ -141,7 +141,7 @@ class AssessmentsDescription extends StatelessWidget {
                                   style: const TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.w600,
-                                    color: Color(0xFF077BD8),
+                                    color: CustomColor.lightBlue,
                                   ),
                                 ),
                                 ...skill.points

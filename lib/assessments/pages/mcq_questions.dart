@@ -43,7 +43,7 @@ class _McqQuestionsState extends State<McqQuestions> {
             style: TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.w700,
-              color: Color(0xFFF31919),
+              color: CustomColor.darkRed,
             ),
           ),
           IconButton(
@@ -81,7 +81,7 @@ class _McqQuestionsState extends State<McqQuestions> {
                       style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w700,
-                          color: Color(0xFF260446)))
+                          color: CustomColor.slateBlue))
                 ],
               ),
               Row(
@@ -151,9 +151,9 @@ class _McqQuestionsState extends State<McqQuestions> {
               Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  border: Border.all(color: const Color(0xFFD9D9D9)),
+                  border: Border.all(color: CustomColor.whiteShade),
                   borderRadius: BorderRadius.circular(25),
-                  color: Colors.white,
+                  color: CustomColor.white,
                 ),
                 child: Column(
                   children: [
@@ -173,7 +173,7 @@ class _McqQuestionsState extends State<McqQuestions> {
                           right: 8.0, left: 8, top: 4, bottom: 14),
                       child: Container(
                         height: height * 0.001,
-                        color: const Color(0xFFD9D9D9),
+                        color: CustomColor.whiteShade,
                       ),
                     ),
                     ...currentQuestion.options.asMap().map((index, option) {
@@ -253,7 +253,7 @@ class _McqQuestionsState extends State<McqQuestions> {
                   style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.w700,
-                      color: Color(0xFF8B8B8B),
+                      color: CustomColor.fontColor,
                       decoration: TextDecoration.underline),
                 ),
               ),

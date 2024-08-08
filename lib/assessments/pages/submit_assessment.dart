@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/leaderboard_technical.dart';
+import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 
 class SubmitScreen extends StatefulWidget {
@@ -72,7 +73,7 @@ class _SubmitScreenState extends State<SubmitScreen> {
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.w700,
-                        color: Color(0xFFEE5602),
+                        color: CustomColor.darkOrange,
                       ),
                     ),
                     Text(
@@ -80,7 +81,7 @@ class _SubmitScreenState extends State<SubmitScreen> {
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
-                        color: Color(0xFF3A0070),
+                        color: CustomColor.slateBlue,
                       ),
                     ),
                   ],
@@ -98,7 +99,7 @@ class _SubmitScreenState extends State<SubmitScreen> {
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w500,
-                color: Colors.black,
+                color: CustomColor.black,
               ),
             ),
             TextSpan(
@@ -106,7 +107,7 @@ class _SubmitScreenState extends State<SubmitScreen> {
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w500,
-                color: Color(0xFF414ECA),
+                color: CustomColor.darkBlue,
               ),
             ),
             TextSpan(
@@ -114,7 +115,7 @@ class _SubmitScreenState extends State<SubmitScreen> {
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w500,
-                color: Colors.black,
+                color: CustomColor.black,
               ),
             ),
           ])),
@@ -123,7 +124,7 @@ class _SubmitScreenState extends State<SubmitScreen> {
             style: const TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.w700,
-              color: Color(0xFFEE5602),
+              color: CustomColor.darkOrange,
             ),
           ),
         ],

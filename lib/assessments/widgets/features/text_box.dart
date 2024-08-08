@@ -25,7 +25,6 @@ class TextBox extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
             border: Border.all(color: borderColor, width: 1.1)
-            // color: borderColor,
             ),
         child: Text(
           text,

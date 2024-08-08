@@ -19,9 +19,9 @@ class InstructionContainer extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
-        border: Border.all(color: const Color(0xFFD9D9D9)),
+        border: Border.all(color: CustomColor.whiteShade2),
         borderRadius: BorderRadius.circular(25),
-        color: Colors.white,
+        color: CustomColor.white,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -41,7 +41,7 @@ class InstructionContainer extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Container(
               height: screenHeight * 0.001,
-              color: const Color(0xFFD9D9D9),
+              color: CustomColor.whiteShade2,
             ),
           ),
           SizedBox(
@@ -64,7 +64,7 @@ class InstructionContainer extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 10,
                     fontWeight: FontWeight.w700,
-                    color: Color(0xFFF31919),
+                    color: CustomColor.darkRed,
                   ),
                 ),
               ],

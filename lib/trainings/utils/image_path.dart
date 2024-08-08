@@ -7,6 +7,8 @@ class ImagePath {
   static const String mcqPng = 'assets/icons/mcq.png';
   static const String technicalPng = 'assets/icons/technical.png';
   static const String notificationAddPng = 'assets/icons/notification_add.png';
+  static const String filter = 'assets/icons/filter.png';
+  static const String dataExploration = 'assets/icons/data_exploration.png';
   static const String startAssessmentGif = 'assets/images/start_assessment.gif';
   static const String shareInfoPng = 'assets/images/shareinfo.png';
   static const String shareInfoBigPng = 'assets/images/shareinfo_big.png';
@@ -28,4 +30,5 @@ class ImagePath {
   static const String assessmentGif = 'assets/images/assessment.gif';
   static const String leaderboardGif = 'assets/images/leaderboard.gif';
   static const String unlockPng = 'assets/images/unlock.png';
+
 }

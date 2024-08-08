@@ -20,7 +20,7 @@ class ImageButton extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
           decoration: BoxDecoration(
-            border: Border.all(color: const Color(0xFFD9D9D9)),
+            border: Border.all(color: CustomColor.whiteShade2),
             borderRadius: BorderRadius.circular(25),
           ),
           child: Column(

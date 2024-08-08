@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/assessments/widgets/features/aspirant_image.dart';
 import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 
@@ -20,7 +21,7 @@ class RankContainer extends StatelessWidget {
                 width: screenWidth * .9,
                 height: screenHeight * .34,
                 decoration: BoxDecoration(
-                  border: Border.all(color: const Color(0xFFD9D9D9)),
+                  border: Border.all(color: CustomColor.whiteShade2 ),
                   borderRadius: BorderRadius.circular(25),
                 ),
                 child: Stack(
@@ -63,7 +64,7 @@ class RankContainer extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w700,
-                              color: Color(0xFF3A0070),
+                              color: CustomColor.slateBlue,
                             ),
                           ),
                           RichText(
@@ -82,7 +83,7 @@ class RankContainer extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontWeight: FontWeight.w700,
-                                    color: Color(0xFF34A853),
+                                    color: CustomColor.green,
                                   ),
                                 ),
                               ],
@@ -135,7 +136,7 @@ class RankContainer extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.w500,
-                                color: Color(0xFF8B8B8B),
+                                color: CustomColor.fontColor,
                                 decoration: TextDecoration.underline,
                               ),
                             ),
@@ -144,7 +145,7 @@ class RankContainer extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.w500,
-                                color: Color(0xFF8B8B8B),
+                                color: CustomColor.fontColor,
                               ),
                             ),
                             TextSpan(
@@ -152,7 +153,7 @@ class RankContainer extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.w500,
-                                color: Color(0xFFEE5602),
+                                color: CustomColor.darkOrange,
                               ),
                             ),
                             TextSpan(
@@ -160,7 +161,7 @@ class RankContainer extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.w500,
-                                color: Color(0xFF8B8B8B),
+                                color: CustomColor.fontColor,
                               ),
                             ),
                           ],

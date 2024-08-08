@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/assessments_home.dart';
+import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/trainings/pages/trainings_home.dart';
 import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
@@ -42,14 +43,13 @@ class SplashScreen extends StatelessWidget {
           ),
           Expanded(
             child: Container(
-              // height: double.infinity,
               width: screenWidth,
               decoration: const BoxDecoration(
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(30),
                   topRight: Radius.circular(30),
                 ),
-                color: Color(0xffF5F1FF),
+                color: CustomColor.whiteShade2,
               ),
               child: Stack(
                 alignment: Alignment.center,
@@ -86,7 +86,7 @@ class SplashScreen extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w500,
-                              color: Color(0xFF8B8B8B),
+                              color: CustomColor.fontColor,
                             ),
                           ),
                           Text(
@@ -94,7 +94,7 @@ class SplashScreen extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w500,
-                              color: Color(0xFF8B8B8B),
+                              color: CustomColor.fontColor,
                             ),
                           ),
                           Text(
@@ -102,7 +102,7 @@ class SplashScreen extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w500,
-                              color: Color(0xFF8B8B8B),
+                              color: CustomColor.fontColor,
                             ),
                           ),
                           Text(
@@ -110,7 +110,7 @@ class SplashScreen extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w500,
-                              color: Color(0xFF8B8B8B),
+                              color: CustomColor.fontColor,
                             ),
                           ),
                         ],

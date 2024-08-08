@@ -25,7 +25,7 @@ class SuccessMcq extends StatelessWidget {
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w700,
-              color: Color(0xFF260446),
+              color: CustomColor.slateBlue,
             ),
           ),
           SizedBox(

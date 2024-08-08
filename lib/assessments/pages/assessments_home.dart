@@ -13,8 +13,6 @@ class AssessmentsHome extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
-
-    // List of assessments
     final List<Map<String, String>> assessments = [
       {
         'assessmentName': 'Python Basics Assessment',
@@ -72,7 +70,7 @@ class AssessmentsHome extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => LeaderboardScreen()));
+                          builder: (context) => const LeaderboardScreen()));
                 },
                 icon: Image.asset(ImagePath.socialLeaderboardPng)),
           ),
@@ -89,22 +87,22 @@ class AssessmentsHome extends StatelessWidget {
               child: TextField(
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color(0x7fd9d9d9),
+                  fillColor: CustomColor.grey,
                   prefixIcon: const Icon(Icons.search),
-                  prefixIconColor: const Color(0xFFABABAB),
+                  prefixIconColor: CustomColor.lightGrey,
                   hintText: 'Search',
                   hintStyle: const TextStyle(
-                    color: Color(0xFFABABAB),
+                    color: CustomColor.lightGrey,
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
-                    borderSide:
-                        const BorderSide(color: Colors.transparent, width: 0),
+                    borderSide: const BorderSide(
+                        color: CustomColor.transparent, width: 0),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
-                    borderSide:
-                        const BorderSide(color: Colors.transparent, width: 0),
+                    borderSide: const BorderSide(
+                        color: CustomColor.transparent, width: 0),
                   ),
                 ),
               ),
@@ -118,7 +116,7 @@ class AssessmentsHome extends StatelessWidget {
                   Text(
                     "Ongoing Assessments",
                     style: TextStyle(
-                      color: Color(0xFF414ECA),
+                      color: CustomColor.darkBlue,
                       fontSize: 13,
                       fontWeight: FontWeight.w700,
                     ),

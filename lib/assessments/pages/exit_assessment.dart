@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/assessments_home.dart';
+import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/global/custom_button.dart';
 
@@ -29,7 +30,7 @@ class ExitScreen extends StatelessWidget {
             style: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w700,
-              color: Colors.black,
+              color: CustomColor.black,
             ),
           ),
           const Text(
@@ -37,7 +38,7 @@ class ExitScreen extends StatelessWidget {
             style: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w700,
-              color: Color(0xFF414ECA),
+              color: CustomColor.darkBlue,
             ),
           ),
           SizedBox(

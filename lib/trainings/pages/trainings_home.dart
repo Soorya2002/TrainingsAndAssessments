@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:material_symbols_icons/material_symbols_icons.dart';
 import 'package:trainings_and_assessments/assessments/pages/splash_screen.dart';
 import 'package:trainings_and_assessments/trainings/pages/filter_category.dart';
 import 'package:trainings_and_assessments/trainings/pages/training_description.dart';
@@ -35,7 +34,7 @@ class _TrainingsHomeState extends State<TrainingsHome> {
               Navigator.push(context,
                   MaterialPageRoute(builder: (ctx) => const SplashScreen()));
             },
-            icon: const Icon(Symbols.data_exploration),
+            icon: Image.asset(ImagePath.dataExploration),
             color: const Color(0xFF414ECA),
           ),
           SizedBox(
@@ -85,10 +84,7 @@ class _TrainingsHomeState extends State<TrainingsHome> {
                     onPressed: () {
                       _scaffoldKey.currentState!.openEndDrawer();
                     },
-                    icon: const Icon(
-                      Icons.filter_alt,
-                      size: 30,
-                    ),
+                    icon: Image.asset(ImagePath.filter),
                   ),
                   suffixIconColor: const Color(0xFF4285F4),
                   border: InputBorder.none,
@@ -104,6 +100,7 @@ class _TrainingsHomeState extends State<TrainingsHome> {
               itemCount: 5,
               itemBuilder: (context, index) {
                 return TrainingContainer(
+                  icon: true,
                   width: screenWidth * .9,
                   text1: 'Python Basics',
                   texta: 'ShareInfo\t',

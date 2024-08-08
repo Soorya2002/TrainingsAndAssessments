@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trainings_and_assessments/assessments/pages/success_mcq.dart';
+import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 
 class DialogBox extends StatelessWidget {
   const DialogBox({super.key});
@@ -14,7 +15,7 @@ class DialogBox extends StatelessWidget {
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.w700,
-            color: Color(0xFF260446),
+            color: CustomColor.slateBlue,
           ),
         ),
         actions: [
@@ -28,7 +29,7 @@ class DialogBox extends StatelessWidget {
                 style: TextButton.styleFrom(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
-                    side: const BorderSide(color: Colors.red),
+                    side: const BorderSide(color: CustomColor.darkRed),
                   ),
                   backgroundColor: Colors.white,
                   padding:
@@ -36,7 +37,7 @@ class DialogBox extends StatelessWidget {
                 ),
                 child: const Text(
                   '   No   ',
-                  style: TextStyle(color: Colors.red),
+                  style: TextStyle(color: CustomColor.darkRed),
                 ),
               ),
               const SizedBox(width: 18),
@@ -51,13 +52,13 @@ class DialogBox extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  backgroundColor: const Color(0xFF34A853),
+                  backgroundColor: CustomColor.green,
                   padding:
                       const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                 ),
                 child: const Text(
                   'Confirm',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: CustomColor.white),
                 ),
               ),
             ],

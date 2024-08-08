@@ -36,7 +36,7 @@ class TrainingDescription extends StatelessWidget {
               textc: 'CE Thalassery',
               text2: 'Dr. Subhash || IIT Madras',
               date: '07 Mar 2024; Thursday',
-              myIconData: null,
+              icon: false,
               additionalChildren: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

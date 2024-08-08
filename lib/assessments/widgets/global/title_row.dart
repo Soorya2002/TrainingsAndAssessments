@@ -27,8 +27,8 @@ class TitleRow extends StatelessWidget {
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: const Color(0xFFD9D9D9)),
-                color: Colors.white),
+                border: Border.all(color: CustomColor.whiteShade2),
+                color: CustomColor.white),
             child: Image.asset(imagePath),
           ),
         ),
@@ -68,7 +68,7 @@ class TitleRow extends StatelessWidget {
                         TextSpan(
                           text: place,
                           style: const TextStyle(
-                            color: Color(0xFF077BD8),
+                            color: CustomColor.lightBlue,
                             fontSize: 13,
                             fontWeight: FontWeight.w700,
                           ),

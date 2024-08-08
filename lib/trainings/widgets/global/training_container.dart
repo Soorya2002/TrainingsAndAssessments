@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:material_symbols_icons/symbols.dart';
+import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 import 'package:trainings_and_assessments/trainings/widgets/features/text_box.dart';
 
 class TrainingContainer extends StatelessWidget {
   final double width;
-  // final double height;
   final String img;
   final String text1;
   final String texta;
@@ -12,14 +11,13 @@ class TrainingContainer extends StatelessWidget {
   final String textc;
   final String text2;
   final String date;
-  final IconData? myIconData;
+  final bool icon;
   final VoidCallback? onPressed;
   final List<Widget>? additionalChildren;
 
   const TrainingContainer(
       {super.key,
       required this.width,
-      // required this.height,
       required this.img,
       required this.text1,
       required this.texta,
@@ -27,7 +25,7 @@ class TrainingContainer extends StatelessWidget {
       required this.textc,
       required this.text2,
       required this.date,
-      this.myIconData = Symbols.notification_add,
+      required this.icon,
       this.onPressed,
       this.additionalChildren});
 
@@ -53,9 +51,6 @@ class TrainingContainer extends StatelessWidget {
             ),
             child: Column(
               children: [
-                // SizedBox(
-                //   height: screenHeight * .02,
-                // ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -123,27 +118,16 @@ class TrainingContainer extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Icon(
-                      myIconData,
-                      color: const Color(0xFF414ECA),
-                      size: 28,
-                    )
+                    icon?IconButton(onPressed: () {}, icon: Image.asset(ImagePath.notificationAddPng)):const Text('')
                   ],
                 ),
-                // SizedBox(
-                //   height: screenHeight * .015,
-                // ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
-                    // width: screenWidth * 0.8,
                     height: screenHeight * .001,
                     color: const Color(0xFFD9D9D9),
                   ),
                 ),
-                // SizedBox(
-                //   height: screenHeight * .01,
-                // ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -161,7 +145,6 @@ class TrainingContainer extends StatelessWidget {
                             ),
                           ),
                           Row(
-                            // mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               TextBox(
                                 width: screenWidth * .2,

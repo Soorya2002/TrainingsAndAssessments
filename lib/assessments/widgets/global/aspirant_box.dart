@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trainings_and_assessments/assessments/utils/colors/custom_color.dart';
 import 'package:trainings_and_assessments/trainings/utils/image_path.dart';
 
 class AspirantBox extends StatelessWidget {
@@ -29,7 +30,7 @@ class AspirantBox extends StatelessWidget {
             width: screenWidth * .9,
             height: height,
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 216, 231, 244),
+              color: CustomColor.whiteShade2,
               borderRadius: BorderRadius.all(
                 Radius.circular(20),
               ),
@@ -59,7 +60,7 @@ class AspirantBox extends StatelessWidget {
                             style: const TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w700,
-                              color: Color(0xFF414ECA),
+                              color: CustomColor.darkBlue,
                             ),
                           ),
                           TextSpan(
@@ -67,7 +68,7 @@ class AspirantBox extends StatelessWidget {
                             style: const TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w700,
-                              color: Color(0xFF34A853),
+                              color: CustomColor.green,
                             ),
                           ),
                         ],
@@ -78,7 +79,7 @@ class AspirantBox extends StatelessWidget {
                       style: const TextStyle(
                           fontSize: 10,
                           fontWeight: FontWeight.w600,
-                          color: Colors.black),
+                          color: CustomColor.black),
                     ),
                   ],
                 ),
@@ -90,10 +91,9 @@ class AspirantBox extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.w700,
-                    color: const Color(0xFF34A853),
+                    color: CustomColor.green,
                   ),
                 ),
-                // Image.asset('assets/arrowup.png'),
               ],
             ),
           ),
@@ -103,7 +103,7 @@ class AspirantBox extends StatelessWidget {
           bottom: 0,
           child: ClipRRect(
             borderRadius: const BorderRadius.only(
-              bottomRight: const Radius.circular(20),
+              bottomRight:  Radius.circular(20),
             ),
             child: Image.asset(
               ImagePath.aspirantBottomRightPng,

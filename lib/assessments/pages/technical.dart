@@ -26,7 +26,7 @@ class TechnicalAssessment extends StatelessWidget {
             style: TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.w700,
-              color: Color(0xFFF31919),
+              color: CustomColor.darkRed,
             ),
           ),
           IconButton(
@@ -80,7 +80,7 @@ class TechnicalAssessment extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
-                      color: Color(0xffEE5602),
+                      color: CustomColor.darkOrange,
                     ),
                   ),
                 ],
@@ -96,7 +96,7 @@ class TechnicalAssessment extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 13,
                       fontWeight: FontWeight.w600,
-                      color: Color(0xff8B8B8B),
+                      color: CustomColor.fontColor,
                     ),
                   ),
                 ],
@@ -116,7 +116,7 @@ class TechnicalAssessment extends StatelessWidget {
                           width: screenWidth * .9,
                           height: screenHeight * .08,
                           decoration: const BoxDecoration(
-                            color: Color(0xffDADEFF),
+                            color: CustomColor.whiteShade2,
                             borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(35),
                               topRight: Radius.circular(35),
@@ -130,14 +130,14 @@ class TechnicalAssessment extends StatelessWidget {
                                 height: screenHeight * .04,
                                 decoration: BoxDecoration(
                                   border: Border.all(
-                                    color: const Color(0xff414ECA),
+                                    color: CustomColor.darkBlue,
                                   ),
                                 ),
                                 child: const Center(
                                   child: Text(
                                     'main.py',
                                     style: TextStyle(
-                                      color: Color(0xff414ECA),
+                                      color: CustomColor.darkBlue,
                                       fontSize: 11,
                                     ),
                                   ),
@@ -148,14 +148,14 @@ class TechnicalAssessment extends StatelessWidget {
                                 height: screenHeight * .04,
                                 decoration: BoxDecoration(
                                   border: Border.all(
-                                    color: const Color(0xff8B8B8B80),
+                                    color: CustomColor.grey,
                                   ),
                                 ),
                                 child: const Center(
                                   child: Text(
                                     'output',
                                     style: TextStyle(
-                                      color: Color(0xff8B8B8B80),
+                                      color: CustomColor.grey,
                                       fontSize: 11,
                                     ),
                                   ),
@@ -187,7 +187,7 @@ class TechnicalAssessment extends StatelessWidget {
                                   TextSpan(
                                     text: '\t\t1\t',
                                     style: TextStyle(
-                                      color: Color(0xff414ECA),
+                                      color: CustomColor.darkBlue,
                                       fontSize: 13,
                                       fontWeight: FontWeight.w600,
                                     ),
@@ -195,7 +195,7 @@ class TechnicalAssessment extends StatelessWidget {
                                   TextSpan(
                                     text: '\t#Code Here',
                                     style: TextStyle(
-                                      color: Color(0xff34A853),
+                                      color: CustomColor.green,
                                       fontWeight: FontWeight.w600,
                                       fontSize: 13,
                                     ),
@@ -214,7 +214,7 @@ class TechnicalAssessment extends StatelessWidget {
                                 const Text(
                                   'print("Hey shareInfo")',
                                   style: TextStyle(
-                                    color: Color(0xff414ECA),
+                                    color: CustomColor.darkBlue,
                                     fontWeight: FontWeight.w500,
                                     fontSize: 13,
                                   ),
@@ -234,13 +234,13 @@ class TechnicalAssessment extends StatelessWidget {
                       height: screenHeight * .035,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: const Color(0xff414ECA),
+                        color: CustomColor.darkBlue,
                       ),
                       child: const Center(
                         child: Text(
                           'Run',
                           style: TextStyle(
-                            color: Colors.white,
+                            color: CustomColor.white,
                           ),
                         ),
                       ),
@@ -256,7 +256,7 @@ class TechnicalAssessment extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 10,
                   fontWeight: FontWeight.w500,
-                  color: Color(0xFF8B8B8B),
+                  color: CustomColor.fontColor,
                 ),
               ),
               CustomButton(
